@@ -49,7 +49,6 @@ def test_stargazer_authenticated(client_authenticated):
     :param client_authenticated:
     """
     response = client_authenticated.get("repos/tiangolo/alembic/starneighbours")
-    print(response.json())
     assert type(response.json()) == list
     assert len(response.json()) == 73
     assert response.json() == neighbours

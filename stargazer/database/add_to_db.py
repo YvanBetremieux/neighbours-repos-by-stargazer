@@ -20,8 +20,6 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 for user in users:
     login = user.get("login")
     pwd = get_password_hash(user.get("password"))
-    print(login)
-    print(pwd)
     query = (
         f"INSERT INTO users('username','email','full_name','disabled', 'hashed_password') "
         f"VALUES ('{login}', '{login}@stargazer.com', '{login}_{login}', false, '{pwd}');"
