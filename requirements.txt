@@ -1,0 +1,16 @@
+nose
+sphinx
+pytest
+black
+isort
+pylint
+python-jose[cryptography]
+passlib[bcrypt]~=1.7.4
+SQLAlchemy==1.4.3
+aiosqlite==0.17.0
+fastapi[all]~=0.88.0
+setuptools~=63.2.0
+uvicorn~=0.20.0
+requests~=2.28.1
+starlette~=0.22.0
+pydantic~=1.10.2
