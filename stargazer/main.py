@@ -16,9 +16,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.requests import Request
 from starlette.responses import JSONResponse, RedirectResponse
 
-from stargazer.database import database
-from stargazer.database.database import oauth2_scheme, pwd_context
-from stargazer.exceptions import StargazerException
+from database import database
+from database.database import oauth2_scheme, pwd_context
+from exceptions import StargazerException
 
 # to get a string like this run:
 # openssl rand -hex 32
